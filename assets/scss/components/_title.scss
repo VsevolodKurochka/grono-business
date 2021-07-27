@@ -1,5 +1,6 @@
 .main-title {
   font-size: 25px;
+  line-height: 1.1;
   @include media-breakpoint-up(sm) {
     font-size: 30px;
   }
@@ -10,6 +11,7 @@
 
 .secondary-title {
   font-size: 22px;
+  line-height: 1.1;
   @include media-breakpoint-up(sm) {
     font-size: 25px;
   }
