@@ -1,0 +1,52 @@
+.steps {
+  &__container {
+    position: relative;
+  }
+  &__coin {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    list-style: none;
+  }
+  &__item {
+    &-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: $font-bold;
+      background-color: $brand-color;
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+    }
+    &-text {
+      max-width: 370px;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: 250px;
+    &__list {
+      grid-gap: 120px;
+      padding-left: 260px;
+    }
+    &__item {
+      display: flex;
+    }
+    &__item:nth-child(2) {
+      padding-left: 50px;
+    }
+    &__item:nth-child(3) {
+      padding-left: 160px;
+    }
+    &__item-text {
+      margin-top: 10px;
+    }
+    &__item-number {
+      margin-right: 30px;
+    }
+  }
+}
