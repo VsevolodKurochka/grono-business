@@ -3,6 +3,15 @@
   100% { transform: rotate(360deg); }
 }
 
+@keyframes translateYInfinite {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
 .infinite-rotate {
   animation: rotateInfinite 10s linear infinite;
 }

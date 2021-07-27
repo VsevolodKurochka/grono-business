@@ -1,0 +1,61 @@
+.news {
+  &__inner {
+    position: relative;
+    background: #192239;
+    border-radius: 20px;
+    padding: 30px 15px;
+    text-align: center;
+  }
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: $brand-color;
+    img {
+      height: 40px;
+    }
+  }
+  &__header {
+    margin-bottom: 30px;
+    margin-top: -85px;
+  }
+  &__coin {
+    position: absolute;
+  }
+  &__coin_1 {
+    width: 100px;
+    animation: translateYInfinite 5s linear infinite;
+  }
+  &__coin_2 {
+    width: 150px;
+    animation: translateYInfinite 10s ease-in-out infinite;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  @include media-breakpoint-up(md) {
+    &__inner {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+    &__title {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 60%;
+      margin-bottom: 45px;
+    }
+    &__coin_1 {
+      top: -80px;
+      right: 50px;
+      width: 135px;
+    }
+    &__coin_2 {
+      bottom: -100px;
+      left: 50px;
+      width: 250px;
+    }
+  }
+}

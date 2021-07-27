@@ -27,7 +27,7 @@
   }
 
   @include media-breakpoint-up(md) {
-    margin-top: 180px;
+    margin-top: 250px;
     &__grid {
       grid-template-columns: 640px 1fr;
       grid-gap: 100px;
@@ -37,6 +37,10 @@
     }
     &__info-rectangle {
       margin-right: 30px;
+    }
+    &__image img {
+      position: relative;
+      left: -60px;
     }
   }
 }

@@ -23,14 +23,14 @@
   }
 
   @include media-breakpoint-up(md) {
-    margin-top: 170px;
+    margin-top: 260px;
     &__title {
       max-width: 750px;
       margin-bottom: 90px;
     }
     &__grid {
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 200px 150px;
+      grid-gap: 250px 150px;
     }
     &__item-header {
       height: 170px;
