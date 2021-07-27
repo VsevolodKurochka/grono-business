@@ -6,7 +6,7 @@
   height: 48px;
   transition: all ease 0.3s;
   z-index: 100;
-  background-color: #fff;
+  background-color: darken($core-color, 5%);
 
   &__logo {
     display: flex;
@@ -14,16 +14,8 @@
     justify-content: space-between;
     height: 100%;
     img {
-      height: 43px;
+      height: 30px;
     }
-  }
-
-  &__logo-default {
-    display: none;
-  }
-
-  &__logo-black {
-    display: block;
   }
 
   &__container {
@@ -37,7 +29,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: darken($core-color, 5%);
     -webkit-overflow-scrolling: touch;
     transition: all ease 0.3s;
     padding: 60px 0 100px 0;
@@ -58,7 +50,7 @@
   &__menu-item-link {
     display: block;
     position: relative;
-    color: #000;
+    color: #fff;
     font-size: 15px;
     font-weight: 500;
     transition: all ease 0.3s;
@@ -68,6 +60,10 @@
       color: $brand-color;
       text-decoration: none;
     }
+  }
+  &__menu-item-link_button {
+    margin-top: 30px;
+    margin-left: 10px;
   }
 
   @include media-breakpoint-up(lg) {
@@ -81,7 +77,7 @@
     &_scrolled {
       position: fixed;
       top: 0;
-      background-color: darken($core-color, 10%);
+      background-color: darken($core-color, 5%);
     }
     &__container {
       display: flex;
@@ -90,6 +86,9 @@
     &__logo {
       height: auto;
       margin-bottom: 0px;
+      img {
+        height: 43px;
+      }
     }
     &__logo-default {
       display: block;
@@ -118,6 +117,8 @@
     }
     &__menu-item-link_button {
       min-width: auto;
+      margin-top: 0;
+      margin-left: 0;
       &:hover {
         transform: none;
       }

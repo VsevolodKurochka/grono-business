@@ -1,5 +1,5 @@
 .intro {
-  margin-top: 0;
+  margin-top: 15px;
   &__grid {
     display: grid;
     grid-gap: 30px;
@@ -7,13 +7,15 @@
   }
   &__subtitle {
     font-weight: $font-regular;
-    font-size: 20px;
+    font-size: 15px;
   }
   &__rectangle {
     flex-shrink: 0;
     margin-right: 20px;
   }
   &__top {
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
   }
   &__title {
@@ -24,6 +26,9 @@
   }
   &__illustration {
     position: relative;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
     &-back,
     &-rectangle,
     &-text {
@@ -44,25 +49,20 @@
     }
     &-text {
       top: 50%;
-      left: 45px;
+      left: 0;
       padding: 15px 20px;
       background: $brand-color;
       border-radius: 20px;
       z-index: 2;
       color: #000;
       font-weight: $font-bold;
-      max-width: 450px;
+      max-width: 270px;
       span {
         color: #fff;
       }
     }
   }
-  @include media-breakpoint-up(sm) {
-    &__top {
-      display: flex;
-      align-items: center;
-    }
-  }
+
   @include media-breakpoint-up(md) {
     &__grid {
       grid-template-columns: repeat(2, 1fr);
@@ -71,9 +71,18 @@
     }
     &__illustration {
       margin-top: 30px;
+      max-width: 100%;
+      &-text {
+        top: 50%;
+        left: 45px;
+        max-width: 450px;
+      }
     }
     &__title {
       padding-right: 20px;
+    }
+    &__subtitle {
+      font-size: 20px;
     }
   }
   @include media-breakpoint-up(lg) {

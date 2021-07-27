@@ -22,6 +22,7 @@ body {
   font-weight: $font-regular;
   line-height: 1.2;
   font-size: 16px;
+  overflow-x: hidden;
 
   @include media-breakpoint-up(md) {
     font-size: 18px;

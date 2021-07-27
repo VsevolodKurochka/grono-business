@@ -48,9 +48,14 @@
       }
     }
     &__footer {
-      max-width: 65%;
+      max-width: 85%;
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &__footer {
+      max-width: 65%;
     }
   }
 }

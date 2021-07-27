@@ -1,8 +1,12 @@
 .page-footer {
 	margin-top: 45px;
 	margin-bottom: 30px;
+	&__container {
+		text-align: center;
+	}
 	&__logo {
 		height: 40px;
+		margin-bottom: 20px;
 	}
 	&__copy {
 		text-align: center;
@@ -17,7 +21,7 @@
 	&__menu-item-link {
 		display: block;
 		position: relative;
-		color: #000;
+		color: #fff;
 		font-size: 15px;
 		font-weight: 500;
 		transition: all ease 0.3s;
@@ -28,12 +32,19 @@
 			text-decoration: none;
 		}
 	}
-	@include media-breakpoint-up(lg) {
+	&__menu-item-link_button {
+		margin-top: 30px;
+	}
+	@include media-breakpoint-up(md) {
 		margin-top: 70px;
+		&__logo {
+			margin-bottom: 0;
+		}
 		&__container {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			text-align: left;
 		}
 		&__menu {
 			position: relative;
@@ -54,6 +65,7 @@
 		}
 		&__menu-item-link_button {
 			min-width: auto;
+			margin-top: 0;
 			&:hover {
 				transform: none;
 			}

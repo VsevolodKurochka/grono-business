@@ -6,6 +6,13 @@
     position: relative;
     text-align: right;
     z-index: 2;
+    margin-top: 30px;
+  }
+  &__illustration-rudder-outer {
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    width: 30px;
   }
   &__inner {
     position: relative;
@@ -15,12 +22,16 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 45px;
   }
 
   @include media-breakpoint-up(md) {
     margin-top: 250px;
     &__title {
       margin-bottom: 45px;
+    }
+    &__footer {
+      margin-top: 0;
     }
     &__column {
       position: absolute;
@@ -34,9 +45,7 @@
       left: 100px;
     }
     &__illustration-rudder-outer {
-      position: absolute;
-      top: 35%;
-      left: 60%;
+      width: auto;
     }
     &__inner {
       margin-bottom: 70px;

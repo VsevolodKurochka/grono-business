@@ -11,6 +11,11 @@
   &__description {
     margin-bottom: 30px;
   }
+  &__image {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @include media-breakpoint-up(md) {
     &__grid {
@@ -22,6 +27,10 @@
     }
     &__title {
       padding-right: 20px;
+    }
+    &__image {
+      max-width: 100%;
+      order: 1;
     }
   }
 }

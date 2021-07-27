@@ -2,13 +2,13 @@
   &__image {
     position: relative;
     margin-right: 20px;
+    text-align: center;
     &-photo {
       width: 250px;
     }
     &-tip {
-      position: absolute;
-      left: -50px;
-      top: 0;
+      margin-top: -40px;
+      margin-bottom: 30px;
     }
   }
   &__name {
@@ -22,8 +22,9 @@
   }
   &__list {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 15px;
     list-style: none;
+    margin-top: 30px;
   }
   &__item {
     position: relative;
@@ -51,7 +52,12 @@
       margin-right: 40px;
     }
     &__image-tip {
-      left: -160px;
+      position: absolute;
+      left: -100px;
+      top: -40px;
+
+      margin-top: 0;
+      margin-bottom: 0;
     }
     &__name {
       font-size: 40px;
@@ -60,6 +66,7 @@
       font-size: 30px;
     }
     &__list {
+      margin-top: 0;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 90px 45px;
     }
