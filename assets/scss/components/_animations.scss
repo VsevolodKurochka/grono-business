@@ -3,6 +3,11 @@
   100% { transform: rotate(360deg); }
 }
 
+@keyframes rotateInfiniteNegative {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
 @keyframes translateYInfinite {
   0%, 100% {
     transform: none;

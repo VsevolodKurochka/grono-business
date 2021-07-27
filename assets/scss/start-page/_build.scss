@@ -15,6 +15,12 @@
     background: #192239;
     border-radius: 22px;
     margin-bottom: 30px;
+    &-coin {
+      position: absolute;
+      top: -120px;
+      left: 0;
+      animation: rotateInfinite 20s linear infinite;
+    }
     &-rectangle {
       position: absolute;
       right: -30px;

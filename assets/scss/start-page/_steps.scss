@@ -4,8 +4,8 @@
   }
   &__coin {
     position: absolute;
-    opacity: 0;
     z-index: -1;
+    width: 100px;
   }
   &__list {
     display: grid;
@@ -47,6 +47,30 @@
     }
     &__item-number {
       margin-right: 30px;
+    }
+    &__coin_1 {
+      width: 150px;
+      top: -60%;
+      left: 40%;
+      animation: rotateInfinite 20s linear infinite;
+    }
+    &__coin_2 {
+      width: 220px;
+      top: -28%;
+      left: 5%;
+      animation: rotateInfiniteNegative 50s ease-out infinite;
+    }
+    &__coin_3 {
+      width: 175px;
+      top: 20%;
+      left: 70%;
+      animation: rotateInfinite 40s linear infinite;
+    }
+    &__coin_4 {
+      width: 200px;
+      top: 60%;
+      left: 5%;
+      animation: rotateInfiniteNegative 70s ease-in-out infinite;
     }
   }
 }
