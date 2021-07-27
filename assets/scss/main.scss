@@ -1,29 +1,38 @@
 // GLOBAL STYLES
-@import "global/custom-variables";
-@import "global/breakpoints";
-@import "global/custom-mixins";
-
-@import "global/reboot";
-@import "global/grid";
-@import "global/forms";
-@import "global/buttons";
+@import "core/custom-variables";
+@import "core/breakpoints";
+@import "core/custom-mixins";
+@import "core/reboot";
 
 // PLUGINS STYLE
 @import "plugins/icons";
 
-// Modules
-@import "modules/body";
-@import "modules/hamburger";
-@import "modules/nav";
-@import "modules/section";
-@import "modules/footer";
-@import "modules/popup";
-
 // Components
+@import "components/body";
+@import "components/grid";
+@import "components/forms";
+@import "components/hamburger";
+@import "components/nav";
+@import "components/footer";
+@import "components/popup";
+@import "components/page-line";
+@import "components/animations";
+@import "components/section";
+@import "components/text";
+@import "components/title";
+@import "components/rectangle";
+@import "components/buttons";
 @import "components/custom-select";
-@import "components/project-item";
 @import "components/form";
 @import "components/upload";
 @import "components/checkbox";
 
 // BLOCKS STYLE
+@import "start-page/intro";
+@import "start-page/steps";
+@import "start-page/business";
+@import "start-page/market";
+@import "start-page/liner";
+@import "start-page/travel";
+@import "start-page/build";
+@import "start-page/why";

@@ -403,6 +403,10 @@ $(document).ready(function() {
 		$('#js-navigation-menu').removeClass('nav__menu_active');
 		$('#js-nav-hamburger').removeClass('active');
 	});
+	$('.anchor').click(function (e) {
+		e.preventDefault();
+		scroll($( $(this).attr('href') ), 1500);
+	});
 	$('#js-nav-hamburger').click(function () {
 		$(this).toggleClass('active');
 		$('#js-navigation').toggleClass('is-opened');
