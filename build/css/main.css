@@ -922,6 +922,8 @@ input[type=number]::-webkit-outer-spin-button {
     height: 40px; }
   .rectangle_brand {
     background-color: #FF9605; }
+  .rectangle_dark {
+    background-color: #192239; }
 
 .btn {
   position: relative;
@@ -1607,3 +1609,38 @@ input[type=number]::-webkit-outer-spin-button {
     .why__item-header {
       height: 170px;
       margin-bottom: 30px; } }
+
+.bonus__grid {
+  display: grid;
+  grid-gap: 30px; }
+
+.bonus__title {
+  margin-bottom: 30px; }
+
+.bonus__info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .bonus__info-rectangle {
+    margin-right: 15px; }
+
+@media (min-width: 768px) {
+  .bonus__grid {
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 60px; }
+  .bonus__image {
+    text-align: center;
+    -ms-flex-order: 1;
+        order: 1; } }
+
+@media (min-width: 1024px) {
+  .bonus {
+    margin-top: 180px; }
+    .bonus__grid {
+      grid-template-columns: 640px 1fr;
+      grid-gap: 100px; }
+    .bonus__title {
+      margin-bottom: 45px; }
+    .bonus__info-rectangle {
+      margin-right: 30px; } }
