@@ -105,8 +105,8 @@
       align-items: center;
       justify-content: flex-end;
     }
-    &__menu-item {
-      margin-right: 20px;
+    &__menu-item:not(:last-child) {
+      margin-right: 45px;
     }
     &__menu-item-link {
       color: #fff;
@@ -116,10 +116,11 @@
         color: $brand-color;
       }
     }
-  }
-  @include media-breakpoint-up(xl) {
-    &__menu-item {
-      margin-right: 30px;
+    &__menu-item-link_button {
+      min-width: auto;
+      &:hover {
+        transform: none;
+      }
     }
   }
 }

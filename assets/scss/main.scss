@@ -9,8 +9,8 @@
 
 // Components
 @import "components/body";
+@import "components/buttons";
 @import "components/grid";
-@import "components/forms";
 @import "components/hamburger";
 @import "components/nav";
 @import "components/footer";
@@ -21,7 +21,7 @@
 @import "components/text";
 @import "components/title";
 @import "components/rectangle";
-@import "components/buttons";
+
 @import "components/custom-select";
 @import "components/form";
 @import "components/upload";
@@ -43,3 +43,4 @@
 @import "start-page/for-who";
 @import "start-page/program";
 @import "start-page/speaker";
+@import "start-page/registration";

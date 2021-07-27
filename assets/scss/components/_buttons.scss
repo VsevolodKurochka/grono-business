@@ -39,8 +39,7 @@
     color: #BDBDBD;
     pointer-events: none;
   }
-  &--small {
-    font-size: 18px;
-    padding: 9px;
+  &_fluid {
+    width: 100%;
   }
 }

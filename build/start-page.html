@@ -58,17 +58,18 @@
       </button>
     </div>
     <nav class="nav__menu" id="js-navigation-menu">
-      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-format">Сетевой бизнес</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-format">Рынок круизов</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-format">Начать бизнес</a></li>
-      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-format">Сообщество</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-steps">Сетевой бизнес</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-market">Рынок круизов</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-why">Начать бизнес</a></li>
+      <li class="nav__menu-item"><a class="nav__menu-item-link" data-scroll="data-scroll" href="#section-connect">Сообщество</a></li>
+      <li class="nav__menu-item"><a class="btn nav__menu-item-link_button" data-scroll="data-scroll" href="#form">Зарегистрироваться</a></li>
     </nav>
   </div>
 </div>
 
 <div id="page-container" class="page-container">
     <img src="img/global-line.png" alt="line" class="page-line">
-    <section class="section intro">
+    <section class="section intro" id="section-intro">
         <div class="container">
             <div class="intro__grid">
                 <div class="intro__column">
@@ -108,7 +109,7 @@
             </div>
         </div>
     </section>
-    <section class="section steps">
+    <section class="section steps" id="section-steps">
         <div class="container steps__container">
             <img src="img/coin-1.png" alt="1" class="steps__coin steps__coin_1">
             <img src="img/coin-2.png" alt="2" class="steps__coin steps__coin_2">
@@ -138,7 +139,7 @@
             </ul>
         </div>
     </section>
-    <section class="section business">
+    <section class="section business" id="section-business">
         <div class="container">
             <div class="business__grid">
                 <div class="business__column">
@@ -163,7 +164,7 @@
             </div>
         </div>
     </section>
-    <section class="section market">
+    <section class="section market" id="section-market">
         <div class="container">
             <h3 class="market__header secondary-title">
                 Вы знали, что в период пандемии, когда весь мировой туризм пришел в упадок, <span class="text-brand">рынок круизов вырос на 10%?</span>
@@ -185,7 +186,7 @@
             </div>
         </div>
     </section>
-    <section class="section liner">
+    <section class="section liner" id="section-liner">
         <div class="container liner__container">
             <img src="img/liner.png" class="liner__ship">
             <img src="img/water.png" class="liner__water">
@@ -226,7 +227,7 @@
             </ul>
         </div>
     </section>
-    <section class="section travel">
+    <section class="section travel" id="section-travel">
         <div class="container ">
             <div class="travel__inner">
                 <div class="travel__column">
@@ -257,7 +258,7 @@
             </div>
         </div>
     </section>
-    <section class="section build">
+    <section class="section build" id="section-build">
         <div class="container">
             <div class="build__grid">
                 <div class="build__column">
@@ -284,7 +285,7 @@
             </div>
         </div>
     </section>
-    <section class="section why">
+    <section class="section why" id="section-why">
         <div class="container">
             <h3 class="why__title main-title">
                 ПОЧЕМУ <span class="text-brand">ВАМ СТОИТ УЖЕ СЕЙЧАС НАЧАТЬ</span> СТРОИТЬ БИЗНЕС В НИШЕ КРУИЗОВ?
@@ -333,7 +334,7 @@
             </div>
         </div>
     </section>
-    <section class="section bonus">
+    <section class="section bonus" id="section-bonus">
         <div class="container">
             <div class="bonus__grid">
                 <div class="bonus__image">
@@ -358,7 +359,7 @@
             </div>
         </div>
     </section>
-    <section class="section news">
+    <section class="section news" id="section-news">
         <div class="container">
             <div class="news__inner">
                 <img src="img/coin-news-1.png" class="news__coin news__coin_1">
@@ -377,7 +378,7 @@
             </div>
         </div>
     </section>
-    <section class="section connect">
+    <section class="section connect" id="section-connect">
         <div class="container">
             <div class="connect__grid">
                 <div class="connect__image">
@@ -414,7 +415,7 @@
             </div>
         </div>
     </section>
-    <section class="section for-who">
+    <section class="section for-who" id="section-for-who">
         <div class="container">
             <h3 class="main-title for-who__title">
                 ДЛЯ КОГО ЭТОТ <br><span class="text-brand">МАСТЕР-КЛАСС?</span>
@@ -450,7 +451,7 @@
             </div>
         </div>
     </section>
-    <section class="section program">
+    <section class="section program" id="section-program">
         <div class="container">
             <h3 class="secondary-title program__title">Программа мастер-класса</h3>
             <div class="program__grid">
@@ -468,7 +469,7 @@
             </div>
         </div>
     </section>
-    <section class="section speaker">
+    <section class="section speaker" id="section-speaker">
         <div class="container">
             <div class="speaker__header">
                 <div class="speaker__image">
@@ -496,7 +497,68 @@
             </ul>
         </div>
     </section>
+    <section id="form" class="registration registration_offset">
+        <div class="container">
+            <div class="registration__grid">
+                <div class="registration__info">
+                    <div class="registration__image">
+                        <img src="img/check-list.png" alt="" class="registration__image-main">
+                        <img src="img/coin-news-1.png" alt="" class="registration__image-coin registration__image-coin_1">
+                        <img src="img/coin-news-2.png" alt="" class="registration__image-coin registration__image-coin_2">
+                    </div>
 
+                    <p class="registration__info-description">
+                        * Бонус за регистрацию — <span class="text-highlight">Чек-лист<br>
+                        “5 аргументов обработки возражений о МЛМ”</span>
+                    </p>
+                </div>
+
+                <div class="registration__form">
+                    <p class="secondary-title text-bold">
+                        Приходите на мастер-класс —
+                        и узнайте, <span class="text-brand">как с помощью системы Grono увеличивать сеть партнеров</span> в МЛМ-бизнесе
+                    </p>
+                    <div class="registration__links">
+                        <a href="#" class="registration__link registration__link_telegram"><img src="img/telegram.svg" alt=""></a>
+                        <a href="#" class="registration__link registration__link_viber"><img src="img/viber.svg" alt=""></a>
+                    </div>
+                    <p>
+                        Зарегистрируйте с помощью мессенджеров
+                        или с помощью электронной почты
+                    </p>
+                    <form class="form" action="#" method="post">
+                        <label class="form__group form__group_name">
+                            <input type="text" name="name" class="form__control" placeholder="Имя" required>
+                        </label>
+                        <label class="form__group form__group_email">
+                            <input type="email" name="email" class="form__control" placeholder="Email" required>
+                        </label>
+                        <div class="form__footer">
+                            <button type="submit" class="btn btn_fluid">
+                                Зарегистрироваться бесплатно<br>
+                                и получить чек лист
+                            </button>
+                        </div>
+
+                        <p class="form__text form__info">Нажимая на кнопку вы принимаете условия <a href="#">политики конфиденциальности</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer">
+	<div class="container page-footer__container">
+		<img class="page-footer__logo" src="img/logo.png" alt="Logo"/>
+		<nav class="page-footer__menu">
+			<li class="page-footer__menu-item"><a class="page-footer__menu-item-link" data-scroll="data-scroll" href="#section-steps">Сетевой бизнес</a></li>
+			<li class="page-footer__menu-item"><a class="page-footer__menu-item-link" data-scroll="data-scroll" href="#section-market">Рынок круизов</a></li>
+			<li class="page-footer__menu-item"><a class="page-footer__menu-item-link" data-scroll="data-scroll" href="#section-why">Начать бизнес</a></li>
+			<li class="page-footer__menu-item"><a class="page-footer__menu-item-link" data-scroll="data-scroll" href="#section-connect">Сообщество</a></li>
+			<li class="page-footer__menu-item"><a class="btn page-footer__menu-item-link_button" data-scroll="data-scroll" href="#form">Зарегистрироваться</a></li>
+		</nav>
+	</div>
+	<p class="page-footer__copy">Все права защищены Grono © 2021</p>
+</footer>
 </div>
 
 <div class="popup-block" id="popup">

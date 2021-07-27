@@ -380,7 +380,7 @@ $(document).ready(function() {
 
 	function scroll(scrollLink, speed){
 		$('html, body').animate({
-			scrollTop: scrollLink.offset().top - $('#js-navigation').height()
+			scrollTop: scrollLink.offset().top - $('#js-navigation').height() - 75
 		}, speed);
 		return false;
 	}

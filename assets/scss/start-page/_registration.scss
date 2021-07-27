@@ -1,0 +1,82 @@
+.registration {
+  &__grid {
+    display: grid;
+    grid-gap: 30px;
+  }
+  &__image {
+    position: relative;
+    &-coin {
+      position: absolute;
+    }
+    &-coin_1 {
+      top: 0;
+      right: 0;
+      width: 100px;
+      animation: translateYInfinite 5s ease-in-out infinite;
+    }
+    &-coin_2 {
+      bottom: 0;
+      left: 0;
+      width: 150px;
+      animation: translateYInfinite 10s ease-in-out infinite;
+      filter: blur(3px);
+    }
+  }
+  &__info {
+    &-description {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+  &__form {
+    position: relative;
+    background: #192239;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    form {
+      margin-top: 30px;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+    border-radius: 12px;
+    margin-right: 10px;
+    width: 95px;
+    height: 60px;
+    &_telegram {
+      background: #4BA7E6;
+    }
+    &_viber {
+      background: #5F308E;
+    }
+    img {
+      height: 35px;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    &_offset {
+      margin-top: 200px;
+    }
+    &__grid {
+      grid-template-columns: 1fr 500px;
+      grid-gap: 60px;
+    }
+    &__form {
+      padding: 50px 30px;
+    }
+  }
+}
