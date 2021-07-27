@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "ico-font";
-	src: url('../fonts/icofont/ico-font.eot?1622047145');
-	src: url('../fonts/icofont/ico-font.eot??1622047145#iefix') format('eot'),
-		url('../fonts/icofont/ico-font.woff2?1622047145') format('woff2'),
-		url('../fonts/icofont/ico-font.woff?1622047145') format('woff'),
-		url('../fonts/icofont/ico-font.ttf?1622047145') format('truetype'),
-		url('../fonts/icofont/ico-font.svg?1622047145#ico-font') format('svg');
+	src: url('../fonts/icofont/ico-font.eot?1627378656');
+	src: url('../fonts/icofont/ico-font.eot??1627378656#iefix') format('eot'),
+		url('../fonts/icofont/ico-font.woff2?1627378656') format('woff2'),
+		url('../fonts/icofont/ico-font.woff?1627378656') format('woff'),
+		url('../fonts/icofont/ico-font.ttf?1627378656') format('truetype'),
+		url('../fonts/icofont/ico-font.svg?1627378656#ico-font') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -36,41 +36,14 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == arrow-link {
+	@if $filename == quotes {
 		$char: "\E001";
 	}
-	@if $filename == arrow-select {
+	@if $filename == vk {
 		$char: "\E002";
 	}
-	@if $filename == arrow {
-		$char: "\E003";
-	}
-	@if $filename == big-arrow {
-		$char: "\E004";
-	}
-	@if $filename == button-stroke {
-		$char: "\E005";
-	}
-	@if $filename == chevron {
-		$char: "\E006";
-	}
-	@if $filename == clear {
-		$char: "\E007";
-	}
-	@if $filename == cross {
-		$char: "\E008";
-	}
-	@if $filename == odnoklassniki {
-		$char: "\E009";
-	}
-	@if $filename == quotes {
-		$char: "\E00A";
-	}
-	@if $filename == vk {
-		$char: "\E00B";
-	}
 	@if $filename == youtube-new {
-		$char: "\E00C";
+		$char: "\E003";
 	}
 
 	@return $char;
@@ -87,33 +60,6 @@
 	}
 }
 
-.icon-arrow-link {
-	@include icon(arrow-link);
-}
-.icon-arrow-select {
-	@include icon(arrow-select);
-}
-.icon-arrow {
-	@include icon(arrow);
-}
-.icon-big-arrow {
-	@include icon(big-arrow);
-}
-.icon-button-stroke {
-	@include icon(button-stroke);
-}
-.icon-chevron {
-	@include icon(chevron);
-}
-.icon-clear {
-	@include icon(clear);
-}
-.icon-cross {
-	@include icon(cross);
-}
-.icon-odnoklassniki {
-	@include icon(odnoklassniki);
-}
 .icon-quotes {
 	@include icon(quotes);
 }
@@ -123,3 +69,4 @@
 .icon-youtube-new {
 	@include icon(youtube-new);
 }
+

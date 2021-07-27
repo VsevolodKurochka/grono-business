@@ -1,4 +1,26 @@
 
-$brand-color: #FC2C38;
-$font-family: 'Formular', sans-serif;
+$brand-color: #FF9605;
+$font-family: 'Roboto', sans-serif;
+$font-bold: 700;
+$font-regular: 400;
 
+$grid-gutter-width: 32px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 1024px,
+  lg: 1200px,
+  xl: 1500px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 700px,
+  md: 940px,
+  lg: 1170px,
+  xl: 1170px
+) !default;

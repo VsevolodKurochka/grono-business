@@ -1,13 +1,25 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
 body {
   position: relative;
-  background-color: #fff;
+  background-color: #0C121E;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   font-family: $font-family;
-  color: #000;
-  font-weight: 400;
+  color: #fff;
+  font-weight: $font-regular;
   line-height: 1.2;
   font-size: 16px;
 

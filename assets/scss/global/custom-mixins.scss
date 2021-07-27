@@ -1,14 +1,41 @@
-@mixin sliderMarginItem($margin) {
-  .swiper-slide {
-    &:first-child {
-      margin-left: calc((100vw - #{$margin}) / 2);
-    }
+@mixin make-container($gutter: $grid-gutter-width) {
+  width: 100%;
+  padding-right: $gutter / 2;
+  padding-left: $gutter / 2;
+  margin-right: auto;
+  margin-left: auto;
+}
 
-    &:last-child {
-      margin-right: calc((100vw - #{$margin}) / 2);
+@mixin make-row($gutter: $grid-gutter-width) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$gutter / 2;
+  margin-left: -$gutter / 2;
+}
+
+@mixin make-container-max-widths($max-widths: $container-max-widths, $breakpoints: $grid-breakpoints) {
+  @each $breakpoint, $container-max-width in $max-widths {
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      max-width: $container-max-width;
     }
   }
 }
+
+@mixin reset-button() {
+  position: relative;
+  outline: none !important;
+  border: none;
+  cursor: pointer;
+  text-decoration: none !important;
+  background: none;
+  -webkit-appearance: none;
+
+  -webkit-transform: translateZ(0px);
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
 
 @mixin placeholder() {
   &::placeholder {

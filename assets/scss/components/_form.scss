@@ -65,10 +65,6 @@
   }
 
   select.form__control {
-    &:focus::-ms-value {
-      color: $input-color;
-      background-color: $input-bg;
-    }
 
     &:not(.not-empty) {
       color: #BCBFC7;

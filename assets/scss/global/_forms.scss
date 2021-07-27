@@ -41,7 +41,6 @@
 
 	&:-moz-focusring {
 		color: transparent;
-		text-shadow: 0 0 0 $input-color;
 	}
 
 	&::placeholder {
@@ -135,8 +134,8 @@ select.form-control {
 		// in IE and (under certain conditions) Edge, as it looks bad and cannot be made to
 		// match the appearance of the native widget.
 		// See https://github.com/twbs/bootstrap/issues/19398.
-		color: $input-color;
-		background-color: $input-bg;
+		color: #ddd;
+		background-color: #ddd;
 	}
 
 	// Styles for "pseudo" placeholder when select is not selected
@@ -321,12 +320,12 @@ input[type=number]::-webkit-outer-spin-button {
 .form-row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: -$form-grid-gutter-width;
-	margin-left: -$form-grid-gutter-width;
+	margin-right: -15px;
+	margin-left: -15px;
 	> .col,
 	> [class*="col-"] {
-		padding-right: $form-grid-gutter-width;
-		padding-left: $form-grid-gutter-width;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 
 	&.no-gutters {

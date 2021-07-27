@@ -1,19 +1,12 @@
-
 // GLOBAL STYLES
 @import "global/custom-variables";
+@import "global/breakpoints";
 @import "global/custom-mixins";
 
-@import "global/functions";
-@import "global/bootstrap-variables";
-@import "global/mixins";
 @import "global/reboot";
-@import "global/type";
 @import "global/grid";
 @import "global/forms";
 @import "global/buttons";
-@import "global/utilities";
-@import "global/fonts";
-@import "global/tabs";
 
 // PLUGINS STYLE
 @import "plugins/icons";
