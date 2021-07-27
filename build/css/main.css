@@ -1537,3 +1537,43 @@ input[type=number]::-webkit-outer-spin-button {
       position: absolute;
       top: 35%;
       left: 60%; } }
+
+.build__grid {
+  display: grid;
+  grid-gap: 30px; }
+
+.build__text {
+  display: grid;
+  grid-gap: 15px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.build__top {
+  position: relative;
+  padding: 20px;
+  background: #192239;
+  border-radius: 22px;
+  margin-bottom: 30px; }
+  .build__top-rectangle {
+    position: absolute;
+    right: -30px;
+    bottom: -30px; }
+
+.build__image {
+  margin-bottom: 20px; }
+
+@media (min-width: 1024px) {
+  .build__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+    -ms-flex-align: center;
+        align-items: center; }
+  .build__top {
+    padding: 45px;
+    margin-bottom: 45px; }
+  .build__text {
+    grid-gap: 30px;
+    padding-left: 35px;
+    padding-right: 35px; }
+  .build__image {
+    margin-bottom: 40px; } }
