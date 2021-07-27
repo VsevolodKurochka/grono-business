@@ -1,0 +1,36 @@
+
+// GLOBAL STYLES
+@import "global/custom-variables";
+@import "global/custom-mixins";
+
+@import "global/functions";
+@import "global/bootstrap-variables";
+@import "global/mixins";
+@import "global/reboot";
+@import "global/type";
+@import "global/grid";
+@import "global/forms";
+@import "global/buttons";
+@import "global/utilities";
+@import "global/fonts";
+@import "global/tabs";
+
+// PLUGINS STYLE
+@import "plugins/icons";
+
+// Modules
+@import "modules/body";
+@import "modules/hamburger";
+@import "modules/nav";
+@import "modules/section";
+@import "modules/footer";
+@import "modules/popup";
+
+// Components
+@import "components/custom-select";
+@import "components/project-item";
+@import "components/form";
+@import "components/upload";
+@import "components/checkbox";
+
+// BLOCKS STYLE

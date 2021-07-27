@@ -1,0 +1,98 @@
+//
+// Headings
+//
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+	font-family: $font-family;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+
+
+
+h1,
+.h1 {
+	font-weight: 700;
+	line-height: 74px;
+	font-family: $font-family;
+	margin-bottom: 60px;
+	font-size: 64px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 46px;
+		line-height: 60px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 32px;
+		line-height: 40px;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+}
+
+
+h2, .h2 {
+	font-size: 40px;
+	line-height: 45px;
+	font-weight: 700;
+	margin-bottom: 60px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 35px;
+		line-height: 40px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 24px;
+	}
+}
+h3, .h3 {
+	font-size: 48px;
+	line-height: 60px;
+
+	@include media-breakpoint-down(md) {
+		font-size: 34px;
+		line-height: 44px;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 24px;
+		line-height: 32px;
+		font-weight: 500;
+		margin-bottom: 20px;
+	}
+}
+h4, .h4 {
+	font-size: 24px;
+}
+h5, .h5 {
+	font-size: 20px;
+}
+h6, .h6 {
+	font-size: 16px;
+}
+
+.base-article {
+
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6 {
+		&:not(:first-child) {
+		margin-top: 40px;
+		}
+	}
+}

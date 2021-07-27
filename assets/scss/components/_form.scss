@@ -1,0 +1,93 @@
+.form {
+  &__upload {
+    margin-bottom: 30px;
+  }
+
+  &__footer {
+    margin-top: 30px;
+  }
+
+  &__group {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__group-title {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  &__control {
+    display: block;
+    padding: 10px 12px;
+    outline: none !important;
+    -webkit-appearance: none;
+    overflow: hidden;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    background: none;
+    resize: none;
+
+    .is-invalid & {
+      border-bottom-color: $brand-color;
+    }
+
+    // Unstyle the caret on `<select>`s in IE10+.
+    &::-ms-expand {
+      background-color: transparent;
+      border: 0;
+    }
+
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #000;
+    }
+
+    @include placeholder() {
+      // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+      opacity: 1;
+      @include transition();
+    }
+
+    &:focus {
+      @include placeholder() {
+        opacity: 0;
+      }
+    }
+  }
+
+  select.form__control {
+    &:focus::-ms-value {
+      color: $input-color;
+      background-color: $input-bg;
+    }
+
+    &:not(.not-empty) {
+      color: #BCBFC7;
+      font-weight: 400;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__upload {
+      margin-bottom: 60px;
+    }
+    &__group {
+      margin-bottom: 30px;
+    }
+    &__group-title {
+      font-size: 18px;
+    }
+    &__footer {
+      margin-top: 60px;
+    }
+  }
+}

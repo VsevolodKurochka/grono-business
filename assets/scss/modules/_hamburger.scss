@@ -1,0 +1,76 @@
+$hamburger-width: 25px;
+$hamburger-height: 22px;
+$hamburger-transistion-duration: 0.3s;
+$hamburger-line-width: 100%;
+$hamburger-line-height: 2px;
+
+.hamburger {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  transition: .25s ease-in-out;
+  &:focus {
+    outline: none;
+  }
+  &__lines {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: $hamburger-width;
+    height: $hamburger-height;
+    overflow: hidden;
+  }
+  &__lines span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: $hamburger-line-width;
+    height: $hamburger-line-height;
+    background-color: #000;
+    transition: .25s ease-in-out;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 9px;
+      left: 0px;
+    }
+    &:nth-child(4) {
+      top: 18px;
+    }
+  }
+  &.active &__lines span {
+    background-color: #000;
+    &:nth-child(1) {
+      top: 10.5px;
+      width: 0%;
+      left: 50%;
+    }
+    &:nth-child(2) {
+      left: 0;
+      transform: rotate(45deg)
+    }
+    &:nth-child(3) {
+      left: 0;
+      transform: rotate(-45deg)
+    }
+    &:nth-child(4) {
+      top: 10.5px;
+      width: 0%;
+      left: 50%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}

@@ -1,0 +1,226 @@
+
+.btn {
+  @include reset-button();
+
+  user-select: none;
+  
+  background-color: $brand-color;
+  
+  text-align: center;
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  width: 272px;
+
+  z-index: 4;
+
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 400;
+
+  line-height: 30px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  transition: all 0.2s ease-in-out;
+
+  clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 14px, 100% calc(100% - 14px), calc(100% - 14px) 100%, 14px 100%, 0 calc(100% - 14px), 0 14px);
+  
+  &:hover {
+    background-color: #fff;
+    box-shadow: none;
+    color: #000;
+  }
+  
+  &:active {
+    color: #000;
+    box-shadow: none;
+    background-color: darken(#fff, 10%);
+  }
+  
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none !important;
+    outline: none !important;
+  }
+
+  &--bordered {
+    background-color: transparent;
+    color: #000;
+    display: block;
+    z-index: 5;
+
+    clip-path: none;
+
+
+    &:before {
+      content: "";
+      display: block;
+
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+
+      position: absolute;
+      top: -2px;
+      left: -2px;
+
+      clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 15px, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 calc(100% - 15px), 0 15px);
+
+      background-color: #000;
+      z-index: 0;
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    span {
+      z-index: 3;
+      position: relative;
+      display: inline-block;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 14px, 100% calc(100% - 14px), calc(100% - 14px) 100%, 14px 100%, 0 calc(100% - 14px), 0 14px);
+
+      background-color: #fff;
+      z-index: 1;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $brand-color;
+
+      &:before {
+        background-color: $brand-color;
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+      color: $brand-color;
+
+      &:before {
+        background-color: $brand-color;
+      }
+    }
+  }
+  &--bordered-grey {
+    &:after {
+      background-color: #F5F6F6;
+    }
+  }
+  &--bordered-fluid-brand {
+    color: #fff;
+    &:before {
+      background-color: $brand-color;
+    }
+    &:after {
+      background-color: $brand-color;
+    }
+    &:hover {
+      color: #000;
+    }
+    &:hover:before {
+      background-color: #000;
+    }
+    &:hover:after {
+      background-color: #fff;
+    }
+  }
+  &--bordered-white {
+    background-color: transparent;
+    color: #fff;
+    &:before {
+      background-color: #fff;
+    }
+    &:after {
+      background-color: #131313;
+    }
+  }
+
+  &.disabled,
+  &[disabled] {
+    background-color: #E5E5E5;
+    color: #BDBDBD;
+    pointer-events: none;
+  }
+  &--small {
+    font-size: 18px;
+    padding: 9px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .btn {
+    width: 200px;
+    clip-path: polygon(11px 0, calc(100% - 11px) 0, 100% 11px, 100% calc(100% - 11px), calc(100% - 11px) 100%, 11px 100%, 0 calc(100% - 11px), 0 11px);
+      
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+
+    &--bordered {
+      clip-path: none;
+
+      &:before {
+        clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px);
+      }
+
+      &:after {
+        clip-path: polygon(11px 0, calc(100% - 11px) 0, 100% 11px, 100% calc(100% - 11px), calc(100% - 11px) 100%, 11px 100%, 0 calc(100% - 11px), 0 11px);
+      }
+    }
+  }
+}
+
+.brand-arrow {
+  user-select: none;
+  outline: none !important;
+  text-decoration: none;
+  cursor: pointer;
+  
+  width: 50px;
+  height: 50px;
+
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 17px;
+
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $brand-color;
+  }
+  
+  
+  &.prev {
+    i {
+      transform: rotate(180deg);
+    }
+  }
+
+
+  &.swiper-button-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+
+  }
+}

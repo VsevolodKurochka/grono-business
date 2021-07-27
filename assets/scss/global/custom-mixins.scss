@@ -1,0 +1,32 @@
+@mixin sliderMarginItem($margin) {
+  .swiper-slide {
+    &:first-child {
+      margin-left: calc((100vw - #{$margin}) / 2);
+    }
+
+    &:last-child {
+      margin-right: calc((100vw - #{$margin}) / 2);
+    }
+  }
+}
+
+@mixin placeholder() {
+  &::placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+@mixin transition($property: all, $ease: ease, $duration: 0.3s) {
+  transition: $property $duration $ease;
+}
