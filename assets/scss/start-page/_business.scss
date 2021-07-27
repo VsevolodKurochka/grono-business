@@ -1,0 +1,27 @@
+.business {
+  margin-top: 0;
+  &__grid {
+    display: grid;
+    grid-gap: 30px;
+    padding-top: 60px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__description {
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__grid {
+      grid-template-columns: 640px 1fr;
+      justify-content: space-between;
+    }
+    &__description {
+      max-width: 85%;
+    }
+    &__title {
+      padding-right: 20px;
+    }
+  }
+}
