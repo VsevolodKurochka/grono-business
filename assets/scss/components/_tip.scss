@@ -1,0 +1,18 @@
+.tip {
+  display: inline-flex;
+  background: #FF9605;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 270px;
+  color: #fff;
+  font-size: 18px;
+  &__header {
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid #fff;
+  }
+  img {
+    height: 40px;
+  }
+}

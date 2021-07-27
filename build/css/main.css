@@ -1266,6 +1266,23 @@ input[type=number]::-webkit-outer-spin-button {
   .form-checkbox_brand input[type="checkbox"] + .form-checkbox__indicator:before {
     border-color: #fff; }
 
+.tip {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: #FF9605;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 270px;
+  color: #fff;
+  font-size: 18px; }
+  .tip__header {
+    display: inline-block;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid #fff; }
+  .tip img {
+    height: 40px; }
+
 .intro {
   margin-top: 0; }
   .intro__grid {
@@ -1708,19 +1725,61 @@ input[type=number]::-webkit-outer-spin-button {
   margin-bottom: 30px; }
 
 @media (min-width: 1024px) {
-  .news__inner {
-    padding-top: 45px;
-    padding-bottom: 45px; }
-  .news__title {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60%;
-    margin-bottom: 45px; }
-  .news__coin_1 {
-    top: -80px;
-    right: 50px;
-    width: 135px; }
-  .news__coin_2 {
-    bottom: -100px;
-    left: 50px;
-    width: 250px; } }
+  .news {
+    margin-top: 200px; }
+    .news__inner {
+      padding-top: 45px;
+      padding-bottom: 45px; }
+    .news__title {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 60%;
+      margin-bottom: 45px; }
+    .news__coin_1 {
+      top: -80px;
+      right: 50px;
+      width: 135px; }
+    .news__coin_2 {
+      bottom: -100px;
+      left: 50px;
+      width: 250px; } }
+
+.connect__grid {
+  display: grid;
+  grid-gap: 30px; }
+
+.connect__info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .connect__info-rectangle {
+    margin-right: 15px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
+
+.connect__body {
+  display: grid;
+  grid-gap: 45px; }
+
+.connect__image {
+  position: relative; }
+
+.connect__tip {
+  position: absolute;
+  bottom: 70px;
+  left: 50px; }
+
+@media (min-width: 1024px) {
+  .connect {
+    margin-top: 150px; }
+    .connect__grid {
+      grid-template-columns: 600px 1fr;
+      grid-gap: 45px;
+      -ms-flex-align: center;
+          align-items: center; }
+    .connect__image {
+      -ms-flex-order: 1;
+          order: 1; }
+    .connect__description {
+      max-width: 80%; } }

@@ -37,6 +37,7 @@
     margin-bottom: 30px;
   }
   @include media-breakpoint-up(md) {
+    margin-top: 200px;
     &__inner {
       padding-top: 45px;
       padding-bottom: 45px;
