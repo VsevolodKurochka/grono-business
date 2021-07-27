@@ -1,0 +1,15 @@
+.rectangle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 20px;
+  background: #FFFFFF;
+  img {
+    height: 40px;
+  }
+  &_brand {
+    background-color: $brand-color;
+  }
+}

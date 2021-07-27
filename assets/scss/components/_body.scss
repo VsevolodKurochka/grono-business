@@ -12,7 +12,7 @@ html {
 
 body {
   position: relative;
-  background-color: #0C121E;
+  background-color: $core-color;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,10 +25,11 @@ body {
 
   @include media-breakpoint-up(md) {
     font-size: 18px;
-    line-height: 1.3;
   }
 }
 
 .page-container {
+  position: relative;
   width: 100%;
+  z-index: 1;
 }

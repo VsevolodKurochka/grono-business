@@ -1,0 +1,19 @@
+.main-title {
+  font-size: 25px;
+  @include media-breakpoint-up(sm) {
+    font-size: 30px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 40px;
+  }
+}
+
+.secondary-title {
+  font-size: 22px;
+  @include media-breakpoint-up(sm) {
+    font-size: 25px;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 30px;
+  }
+}

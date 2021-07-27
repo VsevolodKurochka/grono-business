@@ -1,0 +1,16 @@
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-brand {
+  color: $brand-color;
+}
+
+.text-bold {
+  font-weight: $font-bold;
+}
+
+.text-highlight {
+  color: $brand-color;
+  font-weight: $font-bold;
+}

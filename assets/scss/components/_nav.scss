@@ -14,7 +14,7 @@
     justify-content: space-between;
     height: 100%;
     img {
-      height: 22px;
+      height: 43px;
     }
   }
 
@@ -59,7 +59,7 @@
     display: block;
     position: relative;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     transition: all ease 0.3s;
     text-decoration: none;
@@ -73,29 +73,26 @@
   @include media-breakpoint-up(lg) {
     position: absolute;
     height: auto;
-    top: 10px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
     z-index: 100;
     background-color: transparent;
     &_scrolled {
       position: fixed;
       top: 0;
-      background-color: #fff;
+      background-color: darken($core-color, 10%);
+    }
+    &__container {
+      display: flex;
+      align-items: center;
     }
     &__logo {
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 0px;
     }
     &__logo-default {
       display: block;
-    }
-
-    &__logo-black {
-      display: none;
-    }
-    &_scrolled &__logo {
-      display: none;
     }
     &__menu {
       position: relative;
@@ -106,6 +103,7 @@
       z-index: 1;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
     }
     &__menu-item {
       margin-right: 20px;
@@ -118,19 +116,10 @@
         color: $brand-color;
       }
     }
-    &_scrolled &__menu-item-link {
-      color: #000;
-      &:hover {
-        color: $brand-color;
-      }
-    }
   }
   @include media-breakpoint-up(xl) {
     &__menu-item {
       margin-right: 30px;
-    }
-    &__menu-item-link {
-      font-size: 18px;
     }
   }
 }
