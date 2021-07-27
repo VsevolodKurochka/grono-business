@@ -1,0 +1,70 @@
+.speaker {
+  &__image {
+    position: relative;
+    margin-right: 20px;
+    &-photo {
+      width: 250px;
+    }
+    &-tip {
+      position: absolute;
+      left: -50px;
+      top: 0;
+    }
+  }
+  &__name {
+    font-weight: $font-bold;
+    color: $brand-color;
+    font-size: 30px;
+  }
+  &__info {
+    font-size: 20px;
+    font-weight: $font-bold;
+  }
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    padding-left: 20px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 7px;
+      height: 7px;
+      background-color: $brand-color;
+      border-radius: 100%;
+    }
+  }
+  @include media-breakpoint-up(sm) {
+
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    &__image {
+      margin-right: 40px;
+    }
+    &__image-tip {
+      left: -160px;
+    }
+    &__name {
+      font-size: 40px;
+    }
+    &__info {
+      font-size: 30px;
+    }
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 90px 45px;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    margin-top: 200px;
+  }
+}
