@@ -1,25 +1,47 @@
 .registration {
+  &_full {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   &__grid {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 10px;
   }
   &__image {
     position: relative;
+    text-align: center;
     &-coin {
       position: absolute;
+    }
+    &-logo {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 40px;
     }
     &-coin_1 {
       top: 0;
       right: 0;
-      width: 100px;
+      width: 40px;
       animation: translateYInfinite 5s ease-in-out infinite;
     }
     &-coin_2 {
       bottom: 0;
       left: 0;
-      width: 150px;
+      width: 75px;
       animation: translateYInfinite 10s ease-in-out infinite;
       filter: blur(3px);
+    }
+
+    &-map {
+      position: absolute;
+      z-index: -1;
+      left: -105%;
+      top: 5%;
+      max-width: none;
+    }
+    &-main {
+      max-width: 175px;
     }
   }
   &__info {
@@ -67,16 +89,44 @@
       opacity: 0.9;
     }
   }
+  &__title {
+    font-size: 20px;
+  }
+  &__title_margin {
+    margin-bottom: 30px;
+  }
   @include media-breakpoint-up(md) {
     &_offset {
       margin-top: 200px;
     }
     &__grid {
-      grid-template-columns: 1fr 500px;
+      grid-template-columns: 1fr 550px;
       grid-gap: 60px;
     }
     &__form {
       padding: 50px 30px;
+    }
+    &__image {
+      &-coin_1 {
+        width: 100px;
+      }
+      &-coin_2 {
+        width: 150px;
+      }
+      &-main {
+        max-width: 100%;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &_full {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    &__title {
+      font-size: 40px;
     }
   }
 }
