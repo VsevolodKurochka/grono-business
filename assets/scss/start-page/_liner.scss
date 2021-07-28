@@ -87,7 +87,7 @@
       position: absolute;
     }
     &__item:nth-child(1) {
-      left: 130px;
+      left: 60px;
       top: -80px;
     }
     &__item:nth-child(1) &__item-image {
@@ -133,6 +133,12 @@
     &__item:nth-child(3) &__item-image {
       left: 460px;
       top: -155px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &__item:nth-child(1) {
+      left: 130px;
+      top: -80px;
     }
   }
 }

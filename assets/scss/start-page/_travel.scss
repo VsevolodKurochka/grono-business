@@ -38,8 +38,8 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
-      max-width: 550px;
-      z-index: 1;
+      max-width: 350px;
+      z-index: 10;
     }
     &__illustration {
       left: 100px;
@@ -49,6 +49,11 @@
     }
     &__inner {
       margin-bottom: 70px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    &__column {
+      max-width: 550px;
     }
   }
 }
