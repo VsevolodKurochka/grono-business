@@ -1409,6 +1409,8 @@ body {
       z-index: 10; }
     .travel__illustration {
       left: 100px; }
+    .travel__illustration-image {
+      max-width: 910px; }
     .travel__illustration-rudder-outer {
       width: auto; }
     .travel__inner {
